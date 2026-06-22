@@ -1,0 +1,101 @@
+
+@font-face {
+font-family: 'Ambit';
+font-style: normal;
+src: url(https://www.saga.co.uk/emails/fonts/Ambit/Ambit-Regular.woff) format('woff');
+} 
+@font-face {
+font-family: 'Ambit';
+font-style: normal;
+src: url(https://www.saga.co.uk/emails/fonts/Ambit/Ambit-Regular.woff2) format('woff2');
+}
+@font-face {
+font-family: 'Ambit';
+src: url(https://www.saga.co.uk/emails/fonts/Ambit/Ambit-Bold.woff) format('woff');
+font-weight: 600;
+}
+@font-face {
+font-family: 'Ambit';
+src: url(https://www.saga.co.uk/emails/fonts/Ambit/Ambit-Bold.woff2) format('woff2');
+font-weight: 600;
+}
+@font-face {
+font-family: 'Signature';
+src: url(https://www.saga.co.uk/emails/fonts/Signature/SignatureSAGA-RegularWEB.woff) format('woff');
+font-weight: normal;
+}
+@font-face {
+font-family: 'Signature';
+src: url(https://www.saga.co.uk/emails/fonts/Signature/SignatureSAGA-RegularWEB.woff2) format('woff2');
+font-weight: normal;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Ambit';
+    background-color: #F6FBFB;
+    height: 100vh;
+}
+
+h1{
+    text-align: center;
+    margin: 2em 0 1em;
+}
+h1, h2{
+    color: #1E3282;;
+}
+h2{
+    margin-bottom: 0.2em;
+}
+
+.feature-card-container{
+    background-color: #C3E3E3;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 740px;
+    margin: 0 auto;
+    padding: 2em;
+    text-align: center;
+}
+
+.feature-card{
+    background-color: #D4EBEB;
+    border-radius: 8px;
+    width: 320px;
+    display: inline-block;
+    text-align: center;
+    margin: 0.5em 0.5em 0.5em;
+    padding: 1em;
+}
+/* .feature-card:nth-of-type(1),
+.feature-card:nth-of-type(2){
+    margin: 0 0.5em 0;
+} */
+
+input[type="checkbox"]{
+    display: block;
+    margin-left: auto;
+    appearance: none;
+    height: 16px;
+    width: 16px;
+    border: 1px solid #1E3282;
+    border-radius: 4px;
+}
+
+input[type="checkbox"]:checked{
+    background-color: #FA8F3A;
+    border-color: #fa801c;
+}
+input[type="checkbox"]:checked::after{
+    content: "✓";
+    color: #000;
+    display: block;
+    text-align: center;
+    font-size: 0.8em;
+    
+}

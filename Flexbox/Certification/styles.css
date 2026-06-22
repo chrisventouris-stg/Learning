@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #E5F3F3;
+}
+
+#playing-cards{
+    max-width: 940px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4em auto;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    width: 280px;
+    height: 400px;
+    flex: 0 0 280px;
+    background-color: #FFFFFF;
+    outline: 1px solid black;
+    border-radius: 4px;
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.left, .right {
+    font-size: 1.5em;
+    margin: 0.4em;
+    text-align: center;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+
+    font-size: 6em;
+
+    text-align: center;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    transform: rotate(180deg);
+
+}
+
+.card__rotate {
+    transform: rotate(180deg);
+}
+
+.card__red {
+    color: red;
+}

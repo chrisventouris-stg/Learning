@@ -1,0 +1,13 @@
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(144, 82, 82);
+    margin: 40px auto;
+
+
+    border-width: 2px 4px 7px 12px;
+    border-style: solid dashed dashed solid;
+    border-color: black green yellow blue;
+}
+

@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#item-1, #item-3, #item-5 {
+    /* background-color: blue; */
+}
+
+#item-2, #item-4 {
+    /* background-color: red; */
+}
+
+.container {
+    width: 90vw;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center; 
+    gap: 1em;
+    margin: 5rem auto;
+}
+
+.container div {
+    font-size: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+img {
+    display: block;
+    /* max-width: 100%; */
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+
+.square {
+    height: 800px;
+    flex-grow: 1;
+    flex-shrink: 01;
+    flex-basis: 60px;
+
+    /* flex-basis: 150px; */
+    
+}

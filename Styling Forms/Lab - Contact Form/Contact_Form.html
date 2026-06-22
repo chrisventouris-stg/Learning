@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="form-container">
+    <form action="">
+        <h2>IT Ticket Request&nbsp;Form</h2>
+        <!-- Name -->
+        <label for="full-name">
+            Full name: 
+            <input type="text" id="full-name" name="full-name" required>
+        </label>
+        <!-- Email -->
+        <label for="email">
+            Email: 
+            <input type="email" id="email" name="email" required>
+        </label>
+        <!-- Department -->
+         <label for="department">
+            Business unit:
+            <select name="department" id="department" required>
+                <option value="" disabled selected>Select option</option>
+                <option value="">Holidays</option>
+                <option value="">Cruise</option>
+                <option value="">Insurance</option>
+            </select>
+         </label>
+        <!-- Message -->
+         <label class="display-block" for="message">
+            Description:
+            <textarea name="message" name="message" id="message" required rows="8" placeholder="Describe the issue you are experiencing..."></textarea>
+         </label>
+         <!-- Supporting files -->
+          <label for="supporting-files">
+            Supporting files (screenshots/logs)
+            <input type="file" name="supporting-files" id="supporting-files" multiple>
+          </label>
+         <!-- Submit -->
+            <button type="submit">Submit</button>
+    </form>
+</div>
+</body>
+</html>

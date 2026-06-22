@@ -1,0 +1,36 @@
+.container{ 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+img {
+    width: 50rem;
+    height: auto;
+    flex: 1 200px;
+}
+
+.img-blur {
+    filter: blur(2px);
+}
+
+.img-brightness {
+    filter: brightness(180%);
+}
+
+.img-greyscale {
+    filter: grayscale(60%);
+}
+
+.img-sepia {
+    filter: sepia(100%);
+}
+
+.img-hue-rotate {
+    filter: hue-rotate(90deg);
+}
+
+.img-combined {
+    filter: hue-rotate(180deg) blur(1px);
+}

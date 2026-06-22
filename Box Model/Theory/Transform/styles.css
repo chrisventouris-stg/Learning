@@ -1,0 +1,15 @@
+body{
+    border: 2px solid black;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    transform: translate(50px,100px);
+    transform: rotate(45deg);
+    transform: scale(1.5,2);
+
+    /* Combine properties for all to work */
+    transform: translate(50px,50px) rotate(45deg) scale(1.5);
+}

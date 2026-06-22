@@ -1,0 +1,13 @@
+div{
+    height: 120px;
+    overflow-y: auto;
+}
+
+.overflow-box {
+  width: 140px;
+  height: 70px;
+  border: 2px solid black;
+  overflow-x: auto;
+  overflow-y: auto;
+  white-space:nowrap;
+}

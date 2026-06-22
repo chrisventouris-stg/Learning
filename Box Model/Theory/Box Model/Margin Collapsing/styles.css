@@ -1,0 +1,43 @@
+
+/* Margin Collapsing between adjacent elements */
+.box1{
+    margin-bottom: 20px;
+    background-color: lightblue;
+}
+.box2{
+    margin-top: 30px;
+    background-color: lightgreen;
+}
+
+/* Margin Collapsing between parent and child elements */
+.parent{
+    margin-top: 40px;
+    background-color: lightyellow;
+}
+
+.child{
+    margin-top: 30px;
+    background-color: lightcoral;
+}
+
+/* Margin Collapsing in element with no content, padding or border */
+.empty-block{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    height: 0;
+}
+
+.next-block{
+    background-color: lightskyblue;
+}
+
+/* Prevent Margin Collapsing */
+  .parent2 {
+    margin-top: 40px;
+    padding-top: 1px;
+    background-color: lightyellow;
+  }
+  .child2 {
+    margin-top: 30px;
+    background-color: lightpink;
+  }

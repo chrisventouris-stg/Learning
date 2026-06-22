@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <style type="text/css">
+        @font-face {
+        font-family: 'Ambit';
+        font-style: normal;
+        src: url(https://www.saga.co.uk/emails/fonts/Ambit/Ambit-Regular.woff) format('woff');
+        } 
+        @font-face {
+        font-family: 'Ambit';
+        font-style: normal;
+        src: url(https://www.saga.co.uk/emails/fonts/Ambit/Ambit-Regular.woff2) format('woff2');
+        }
+        @font-face {
+        font-family: 'Ambit';
+        src: url(https://www.saga.co.uk/emails/fonts/Ambit/Ambit-Bold.woff) format('woff');
+        font-weight: 600;
+        }
+        @font-face {
+        font-family: 'Ambit';
+        src: url(https://www.saga.co.uk/emails/fonts/Ambit/Ambit-Bold.woff2) format('woff2');
+        font-weight: 600;
+        }
+        @font-face {
+        font-family: 'Signature';
+        src: url(https://www.saga.co.uk/emails/fonts/Signature/SignatureSAGA-RegularWEB.woff) format('woff');
+        font-weight: normal;
+        }
+        @font-face {
+        font-family: 'Signature';
+        src: url(https://www.saga.co.uk/emails/fonts/Signature/SignatureSAGA-RegularWEB.woff2) format('woff2');
+        font-weight: normal;
+        }
+</style>
+    <style type="text/css">
+        body{
+            font-family: 'Ambit', 'Arial';
+            background-color: #F6FBFB;
+            color: #1E3282;
+        }
+        .container{
+            width: 80%;
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #AAD7D7;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h1{
+            margin: 8px 0 16px ;
+            text-align: center;
+        }
+
+        label:not(.availability), textarea{
+            display: block;
+        }
+        label, fieldset legend{
+            font-size: 1.25em;
+            margin: 16px 0 6px;
+        }
+        select{
+            font-size: 1.1em;
+            margin-bottom: 20px;
+
+            max-width: 600px;
+            min-width: 100px
+            
+        }
+        input:not(.availability-radio-btn){
+            width: 98%;
+            height: 30px;
+            font-size: 1rem;
+        }
+        input, textarea, select{
+            background-color: #F6FBFB;
+            border: 1px solid #1e328256;
+            font-family: 'Ambit', 'Arial';
+        }
+        fieldset{
+            border: 1px solid #1e328256;
+            margin-bottom: 20px;
+        }
+        textarea{
+            width: 98%;
+            height: 180px;
+            max-width: 600px;
+            font-size: 1rem;
+        }
+        button{
+            background-color: #1E3282;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-family: 'Ambit', 'Arial';
+            font-weight: 700;
+            font-size: 1.25rem;
+            margin: 20px 0 0;
+            cursor: pointer;
+            width: 100%;
+
+
+        }
+
+        input:focus, textarea:focus{
+            border-color: #FA8F3A;
+        }
+
+        input:invalid, select:invalid, textarea:invalid {
+            border-color: red;
+        }
+        input:valid, select:valid, textarea:valid {
+            border-color: green;
+        }
+        button:hover{
+            background-color: #616FA7;
+        }
+        .radio-group input[type="radio"]{
+            appearance: none;
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            border: 2px solid #FA8F3A;
+        }
+        .radio-group input[type="radio"]:checked{
+            border-color: #1E3282;
+            background-color: #1E3282;
+            box-shadow: 0 5px 15px black;
+        }
+        .radio-group input[type="radio"]::before{
+            content: " ";
+            display: block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            transform: translate(3px,3px) scale(0);
+            transition: all 0.3s ease-in;
+        }
+
+        .radio-group input[type="radio"]:checked::before{
+            transform: translate(3px,3px) scale(1);
+            background-color: #FA8F3A;
+        }        
+        .radio-group input[type="radio"]:checked + label{
+            color: #FA8F3A;
+        }
+        input:first-of-type{
+            background-color: #BBC1D9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Job Application Form</h1>
+        <form action="">
+            <!-- Name -->
+            <label for="name">Full Name: </label>
+            <input type="text" name="name" id="name" required>
+            <!-- Email -->
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" required>
+            <!-- Position -->
+            <label for="position">Role</label>
+            <select name="position" id="position" required>
+                <!-- Placeholder -->
+                <option value="" disabled selected>Select an option</option>
+                <!-- Options -->
+                <option value="customer-service">Customer Service</option>
+                <option value="admin">Admin</option>
+                <option value="shift-manager">Shift Manager</option>
+            </select>
+            <!-- Availability -->
+             <fieldset class="radio-group">
+                <legend>Availability</legend>
+                <!-- Full Time -->
+                <input type="radio" name="availability" id="full-time" value="full-time" class="availability-radio-btn" required>
+                <label for="full-time" class="availability">Full-Time</label>
+                <!-- Part Time -->
+                <input type="radio" name="availability" id="part-time" value="part-time" class="availability-radio-btn">
+                <label for="part-time" class="availability">Part-Time</label>
+                <!-- Experience -->
+            </fieldset>
+                 <label for="experience">Work Experience:</label>
+                 <textarea name="message" id="message" placeholder="Any relevant experience here:"></textarea>
+             <button type="submit">Submit Form</button>
+        </form>
+    </div>
+</body>
+</html>

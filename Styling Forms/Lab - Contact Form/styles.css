@@ -1,0 +1,122 @@
+
+@font-face {
+font-family: 'Ambit';
+font-style: normal;
+src: url(https://www.saga.co.uk/emails/fonts/Ambit/Ambit-Regular.woff) format('woff');
+} 
+@font-face {
+font-family: 'Ambit';
+font-style: normal;
+src: url(https://www.saga.co.uk/emails/fonts/Ambit/Ambit-Regular.woff2) format('woff2');
+}
+@font-face {
+font-family: 'Ambit';
+src: url(https://www.saga.co.uk/emails/fonts/Ambit/Ambit-Bold.woff) format('woff');
+font-weight: 600;
+}
+@font-face {
+font-family: 'Ambit';
+src: url(https://www.saga.co.uk/emails/fonts/Ambit/Ambit-Bold.woff2) format('woff2');
+font-weight: 600;
+}
+@font-face {
+font-family: 'Signature';
+src: url(https://www.saga.co.uk/emails/fonts/Signature/SignatureSAGA-RegularWEB.woff) format('woff');
+font-weight: normal;
+}
+@font-face {
+font-family: 'Signature';
+src: url(https://www.saga.co.uk/emails/fonts/Signature/SignatureSAGA-RegularWEB.woff2) format('woff2');
+font-weight: normal;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    background-color: #F6FBFB;
+    font-family: 'Ambit';
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.form-container{
+    width: 80%;
+    max-width: 800px;
+    min-width: 300px;
+    margin: 0 auto;
+    background-color: #C3E3E3;
+    border-radius: 4px;
+    padding: 1px;
+}
+form{
+    padding: 2em;
+}
+input[type="text"],input[type="email"],input[type="file"],textarea,select{
+    width: 100%;
+    padding: 0.5em;
+    margin: 0.5em 0 1em;
+    border-radius: 4px;
+    border: 1px solid #E8EAF2;
+    font-family: 'Ambit';
+    font-size: 0.8em;
+}
+input[type="file"]{
+    border: none;
+    padding-left: 0;
+
+}
+input[type="text"]:active,
+input[type="text"]:focus,
+input[type="email"]:active,
+input[type="email"]:focus,
+input[type="select"]:active,
+input[type="select"]:focus,
+textarea:active,
+textarea:focus{
+    border: 1px solid #1E3282;
+}
+select, input[type="file"]{
+    display: block;
+    cursor: pointer;
+
+}
+button{
+    margin-top: 0.5em;
+    width: 34%;
+    height: 3em;
+    border-radius: 4px;
+    background-color: #1E3282;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    font-family: 'Ambit';
+    font-size: 0.8em;
+}
+button:hover{
+    background-color: #FA8F3A;
+}
+textarea{
+    resize: vertical;
+    padding: 0.5em;
+    font-family: 'Ambit';
+}
+
+h2{
+    font-size: 2.2em;
+    color: #1E3282;
+    margin: 0 0 0.8em;
+    text-transform: uppercase;
+    font-family: 'Ambit';
+    font-weight: 900;
+}
+label{
+    color: #1E3282;
+    margin: 0;
+}

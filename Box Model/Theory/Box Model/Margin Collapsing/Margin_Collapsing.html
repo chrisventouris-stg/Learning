@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Margin Collapsing between adjacent elements -->
+    <div class="box1">Box 1</div>
+    <div class="box2">Box 2</div>
+    
+    <!-- Margin Collapsing between parent and child elements -->
+    <div class="parent">
+        <div class="child">Child element</div>
+    </div>
+
+    <!-- Margin Collapsing in element with no content, padding or border -->
+     <div class="empty-block"></div>
+     <div class="next-block">Next block</div>
+
+     <!-- Prevent Margin Collapsing -->
+    <div class="parent2">
+        <div class="child2">Child element</div>
+    </div>
+</body>
+</html>

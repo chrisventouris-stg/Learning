@@ -1,0 +1,72 @@
+
+@font-face {
+font-family: 'Ambit';
+font-style: normal;
+src: url(https://www.saga.co.uk/emails/fonts/Ambit/Ambit-Regular.woff) format('woff');
+} 
+@font-face {
+font-family: 'Ambit';
+font-style: normal;
+src: url(https://www.saga.co.uk/emails/fonts/Ambit/Ambit-Regular.woff2) format('woff2');
+}
+@font-face {
+font-family: 'Ambit';
+src: url(https://www.saga.co.uk/emails/fonts/Ambit/Ambit-Bold.woff) format('woff');
+font-weight: 600;
+}
+@font-face {
+font-family: 'Ambit';
+src: url(https://www.saga.co.uk/emails/fonts/Ambit/Ambit-Bold.woff2) format('woff2');
+font-weight: 600;
+}
+@font-face {
+font-family: 'Signature';
+src: url(https://www.saga.co.uk/emails/fonts/Signature/SignatureSAGA-RegularWEB.woff) format('woff');
+font-weight: normal;
+}
+@font-face {
+font-family: 'Signature';
+src: url(https://www.saga.co.uk/emails/fonts/Signature/SignatureSAGA-RegularWEB.woff2) format('woff2');
+font-weight: normal;
+}
+
+body {
+    font-family: 'Ambit';
+}
+
+#email {
+    width: 500px;
+    box-sizing: border-box;
+    margin: 50px auto 0;
+    padding: 50px;
+    border: 2px solid #1E3282;
+    background-color: #C3E3E3;
+    text-align: right;
+}
+
+p {
+    text-align: left;
+}
+
+#confidential, #top-secret {
+    display: inline-block;
+    font-weight: 900;
+    color: #DE2E32;
+    padding: 12px;
+    border: 2px solid #DE2E32;
+    justify-content: center;
+    margin-left: 1px;
+}
+#confidential{
+    transform: rotate(-20deg);
+    
+}
+
+#top-secret{
+    transform: rotate(20deg);
+    
+}
+.blurred {
+    filter: blur(3px);
+}
+

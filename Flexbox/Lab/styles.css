@@ -1,0 +1,129 @@
+
+@font-face {
+font-family: 'Ambit';
+font-style: normal;
+src: url(https://www.saga.co.uk/emails/fonts/Ambit/Ambit-Regular.woff) format('woff');
+} 
+@font-face {
+font-family: 'Ambit';
+font-style: normal;
+src: url(https://www.saga.co.uk/emails/fonts/Ambit/Ambit-Regular.woff2) format('woff2');
+}
+@font-face {
+font-family: 'Ambit';
+src: url(https://www.saga.co.uk/emails/fonts/Ambit/Ambit-Bold.woff) format('woff');
+font-weight: 600;
+}
+@font-face {
+font-family: 'Ambit';
+src: url(https://www.saga.co.uk/emails/fonts/Ambit/Ambit-Bold.woff2) format('woff2');
+font-weight: 600;
+}
+@font-face {
+font-family: 'Signature';
+src: url(https://www.saga.co.uk/emails/fonts/Signature/SignatureSAGA-RegularWEB.woff) format('woff');
+font-weight: normal;
+}
+@font-face {
+font-family: 'Signature';
+src: url(https://www.saga.co.uk/emails/fonts/Signature/SignatureSAGA-RegularWEB.woff2) format('woff2');
+font-weight: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    background: #AAD7D7;
+    font-family: 'Ambit';
+
+}
+
+h1 {
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.pricing-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 2rem auto;
+    justify-content: center;
+    gap: 20px;
+
+    
+}
+
+.pricing-card {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 240px;
+    border: 2px solid black;
+    background: #FFF;
+    justify-content: space-between;
+
+    text-align: center;
+    color: #1E3282;
+    background: #E5F3F3;
+}
+
+.pricing-container::after {
+    content: '';
+    width: 240px;
+    
+}
+
+
+
+.price-list {
+    text-align: left;
+    padding: 0;
+    margin: 0.5em auto;
+    list-style: none;
+    width: 90%;
+    
+}
+
+.price-list__included, .price-list__not-included{
+    display: flex;
+    vertical-align: middle;
+    padding-bottom: 0.5em;
+
+}
+
+
+.price-list__included::before{
+    background-image: url('accept.png');
+}
+
+.price-list__not-included::before {
+    background-image: url('remove.png');
+}
+.price-list__included::before, .price-list__not-included::before {
+    content: '';
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    flex-shrink: 0;
+    padding-right: 0.5em;
+}
+
+
+hr {
+    width: 80%;
+
+}
+
+.btn {
+    color: #FFF;
+    background-color: #1E3282;
+    text-decoration: none;
+    width: 90%;
+    margin: 0.5rem auto;
+    padding: 0.5rem;
+}
