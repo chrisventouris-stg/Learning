@@ -1,0 +1,75 @@
+.products {
+    margin: var(--size-4xl)  0;
+    padding: var(--size-2xl)  0;
+    background-color: var(--blue30);
+}
+
+.products--heading {
+    color: var(--indigo100);
+    font-size: var(--size-2xl);
+    font-weight: 600;
+
+}
+
+.products--pod {
+    width: 92%;
+    margin: 0 auto;
+    background-color: white;
+    padding-bottom: var(--size-2xl);
+}
+
+.products--pod--flash {
+    background-color: var(--blush50);
+    color: var(--indigo100);
+    margin: var(--size-xl) 0 0;
+    padding: var(--size-2xl) var(--size-xl);
+    text-align: left;
+    text-transform: uppercase;
+    line-height: var(--size-lg);
+}
+
+.products--pod--flash > div:first-child {
+    padding-bottom: 0.6rem;
+    font-size: var(--size-xl);
+    font-weight: 700;
+}
+
+.products--pod--img {
+    width: 100%;
+    display: block;
+}
+
+.products--info {
+    background-color: white;
+    text-align: left;
+    padding: var(--size-2xl) var(--size-xl);
+    color: var(--indigo100);
+}
+
+.products--info--heading, 
+.products--info--sub-heading {
+    margin-bottom: var(--size-xxs);
+}
+
+.products--info--sub-heading,
+.products--info--duration,
+.products--info--departure {
+    color: black;
+}
+
+.products--info--hr {
+    background-color: var(--blush100);
+    height: 0.1rem;
+    border: none;
+    margin-bottom: var(--size-2xl)
+}
+
+.products--info--duration {
+    font-weight: 700;
+    margin-bottom: var(--size-xxs)
+
+}
+
+.products--info--departure {
+    font-size: var(--size-sm);
+}

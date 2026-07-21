@@ -1,0 +1,20 @@
+main {
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 2em auto;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+#img-div{
+    background-color: #FFFFFF;
+}
+
+#image {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+}

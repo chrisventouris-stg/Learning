@@ -1,0 +1,37 @@
+#view-online{
+        color: lightgrey;
+        font-size: var(--size-xs);
+        text-decoration: underline;
+        margin: var(--size-xxs) 0;
+}
+
+.nav-bar{
+    margin-top: var(--size-sm);
+}
+
+.nav-bar--left--image{
+    width: 126px;
+    margin: 0 auto var(--size-xxs);
+    display: block;
+}
+
+.nav-bar--left--number{
+    color: var(--indigo100);
+    text-decoration: none;
+    font-size: var(--size-base);
+}
+
+.nav-bar--right{
+    background-color: var(--blue30);
+    margin-top: var(--size-sm);
+    padding: var(--size-xs);
+    display: flex;
+    justify-content: center;
+    
+}
+
+.nav-bar--right--link{
+    width: 33.3333%;
+    text-decoration: none;
+    color: var(--indigo100);
+}

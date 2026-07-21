@@ -1,0 +1,93 @@
+@font-face {
+font-family: 'Ambit';
+font-style: normal;
+src: url(https://www.saga.co.uk/emails/fonts/Ambit/Ambit-Regular.woff) format('woff');
+} 
+@font-face {
+font-family: 'Ambit';
+font-style: normal;
+src: url(https://www.saga.co.uk/emails/fonts/Ambit/Ambit-Regular.woff2) format('woff2');
+}
+@font-face {
+font-family: 'Ambit';
+src: url(https://www.saga.co.uk/emails/fonts/Ambit/Ambit-Bold.woff) format('woff');
+font-weight: 600;
+}
+@font-face {
+font-family: 'Ambit';
+src: url(https://www.saga.co.uk/emails/fonts/Ambit/Ambit-Bold.woff2) format('woff2');
+font-weight: 600;
+}
+@font-face {
+font-family: 'Signature';
+src: url(https://www.saga.co.uk/emails/fonts/Signature/SignatureSAGA-RegularWEB.woff) format('woff');
+font-weight: normal;
+}
+@font-face {
+font-family: 'Signature';
+src: url(https://www.saga.co.uk/emails/fonts/Signature/SignatureSAGA-RegularWEB.woff2) format('woff2');
+font-weight: normal;
+}
+
+:root{
+
+    /* Color Variables */
+    --blue100: #AAD7D7;
+    --blue70: #C3E3E3;
+    --blue50: #D4EBEB;
+    --blue30: #E5F3F3;
+    --blue10: #F6FBFB;
+
+    --indigo100: #1E3282;
+    --indigo70: #616FA7;
+    --indigo50: #8E98C0;
+    --indigo30: #BBC1D9;
+    --indigo10: #E8EAF2;
+
+    --sky100: #00A5E1;
+    --sky70: #4CC0EA;
+    --sky50: #80D2F0;
+    --sky30: #B2E4F6;
+    --sky10: #E5F6FC;
+
+    --champagne100: #FA8F3A;
+    --champagne70: #FBB175;
+    --champagne50: #FCC79C;
+    --champagne30: #FDDDC4;
+    --champagne10: #FEF4EB;
+
+    --blush100: #D6C0DC;
+    --blush50: #EADFED;
+    --blush25: #F5EFF6;
+
+    /* sizes */
+    --size-xxs: 0.5rem;
+    --size-xs: 0.75rem;
+    --size-sm: 0.875rem;
+    --size-base: 1rem;
+    --size-lg: 1.125rem;
+    --size-xl: 1.25rem;
+    --size-2xl: 1.5rem;
+    --size-3xl: 1.875rem;
+    --size-4xl: 2.25rem;
+    --size-5xl: 3rem;
+    --size-6xl: 3.75rem;
+    --size-7xl: 4.5rem;
+    --size-8xl: 6rem;
+    --size-9xl: 8rem;
+    --size-10xl: 10rem;
+}
+
+*, h1, h2, p {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Ambit','Times New Roman', Times, serif;
+    text-align: center;
+}
+

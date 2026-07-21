@@ -1,0 +1,9 @@
+.intro--hero {
+    max-width: 100%;
+    display: block;
+}
+
+.intro--copy {
+    margin: var(--size-xl);
+    line-height: var(--size-2xl);
+}
