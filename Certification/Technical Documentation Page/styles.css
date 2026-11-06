@@ -1,0 +1,116 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::before, ::after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    background-color: #006466;
+    padding: 0.5rem;
+
+    /* FONT */
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* NAV BAR STYLES */
+nav {
+    background-color: #FFF;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+nav header {
+    font-size: 2rem;
+    text-align: left;
+    margin: 1rem 0.6rem;
+}
+
+nav > a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    background-color: #e9ecef;
+    padding: 0.4rem 0.6rem;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+    
+}
+
+
+/* MAIN SECTION STYLES */
+main section {
+    background-color: #FFF;
+    margin: 1rem 0 ;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+main section header {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+main section p {
+    margin: 1rem 0;
+}
+
+main section > :last-child {
+    margin-bottom: 0;
+}
+
+main section > ul:last-child > li:last-child p:last-child {
+    margin-bottom: 0;
+}
+
+main section ul {
+    margin-left: 1rem;
+
+}
+
+main section code {
+    background-color: #e9ecef;
+    display: block;
+    padding: 0.5rem;
+}
+
+@media screen and (min-width:640px) {
+
+    body {
+       display: grid;
+       grid-template-columns: 1fr 2fr;
+       gap: 1rem;
+       max-width: 1000px;
+       margin: 0 auto;
+       align-items: start;
+       position: relative;
+    }
+
+    main section:first-of-type, nav {
+        margin-top: 1rem;
+    }
+
+    nav {
+        position: sticky;
+        top: 1rem;
+        
+    }
+
+    nav header {
+        font-size: 1.2rem;
+    }
+
+
+}
+
+@media screen and (min-width:1025px) {
+
+
+}
