@@ -147,3 +147,54 @@ tbody td {
     margin-left: 1rem;
     margin-right: 1rem;
 }
+
+@media screen and (min-width:600px){
+    .availability-container {
+        max-width: 600px
+    }
+
+    h1 {
+        font-size: var(--font-size-l);
+        margin: 3rem 1rem 2rem;
+    }
+
+    h2 {
+        font-size: var(--font-size-m);
+        text-align: center;
+    }
+
+    th {
+        font-size: var(--font-size-xs);
+    }
+
+    thead th:first-child, 
+    tbody th {
+        width: 4rem;
+    }
+
+}
+@media screen and (min-width:1020px){
+    .availability-container {
+        max-width: 1000px
+    }
+
+    h1 {
+        font-size: var(--font-size-l);
+        margin: 3rem 1rem 2rem;
+    }
+
+    h2 {
+        font-size: var(--font-size-m);
+        text-align: center;
+    }
+
+    th {
+        font-size: var(--font-size-s);
+    }
+
+    thead th:first-child, 
+    tbody th {
+        width: 5rem;
+    }
+
+}
